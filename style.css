@@ -96,3 +96,9 @@ div + figure {
     flex-wrap: none;
     flex-basis: 0;
 }
+
+@media screen and (max-width: 800px) {
+    div {
+      display: none;
+    }
+  }
