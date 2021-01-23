@@ -1,0 +1,104 @@
+/* class selector */
+.class1 {
+    border-width: 20mm;
+    border-style: solid;
+}
+
+/* combining 2 selectors */
+div.class1{
+    background-color: red;
+}
+
+/* id selector */
+#id1{
+    border-color: rgba(152, 2, 10, 1);
+    background-color: #EEE;
+    border-width: 10rem;
+}
+
+/* universal selector */
+* {
+    background-color: hsl(178, 80%, 83%);
+    border-color: #BBBBBB;
+    border-width: 1em;
+    border-radius: 1ch;
+}
+
+/* element selector done in html document */
+
+/* attribute selector */
+[title]{
+    color: rgb(100,0,0);
+}
+
+/* selector list */
+#link1, #link2{
+    text-decoration: overline;
+    text-align: center;
+    color: hsla(178, 80%, 83%, 0.3);
+}
+
+/* pseudo class & element */
+a:hover {
+    color: #DDDDDD;
+}
+
+a:active{
+    color: red;
+}
+
+.box_model{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* child combinator */
+#span_box > a {
+    margin: 2px 3px 4px;
+    padding: 10px 10px 20px 20px;
+    display: inline;
+    position: relative;
+}
+
+/* descendant combinator */
+span a{
+    color: brown;
+    display: block;
+    position: sticky;
+}
+
+/* general sibling combinator */
+img ~ p {
+    color: red;
+}
+
+/* adjacent sibling combinator */
+div + figure {
+    background-color: green;
+}
+
+#flexbox{
+    display: flex;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+#grid{
+    display: flex;
+    flex-grow: 5;
+    flex-wrap: none;
+    flex-basis: 0;
+}
+
+@media screen and (max-width: 800px) {
+    div {
+      display: none;
+    }
+  }
