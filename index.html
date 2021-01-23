@@ -5,6 +5,14 @@
 	<title>Trevor Tsai's GitHub Page Part 2</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" sizes="114x114" href="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" type="image/png">
+	<style>
+		div {
+			border-style: dotted;
+			border-color: white;
+			border-width: 1cm;
+			border-radius: 10pt;
+		}
+	</style>
 </head>
 <body>
 <nav>
@@ -21,12 +29,12 @@
 <p> a small aside often goes unnoticed </p>
 </aside>
 <main>
-<h1>This is heading 1, and my name is Trevor</h1>
+<h1 style="background-color: white">This is heading 1, and my name is Trevor</h1>
 <h2>This is heading 2, and my name is still Trevor</h2>
 <h3> and here is header 3 </h3>
 </main>
 <section>
-	<div>
+	<div class="class1">
 	<p> HTML has a lot of elements. One of them is pre</p>
 	<pre> did you know that the text here has to be formatted exactly
 	as i 
@@ -38,14 +46,18 @@
 	<br>
 	<p> see? </p>
 	<p> If i want, i can add a link too. Even a picture can be clickable!</p>
-	<a href="https://www.youtube.com/watch?v=AymYhmayWz4"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saymedia-content.com%2F.image%2Ft_share%2FMTc0MzgyNDcyNzYxODQ1Mzgy%2Fstar-wars-4-different-types-of-lightsabers.jpg&f=1&nofb=1" alt="image machine broke"></a>
+	<a href="https://www.youtube.com/watch?v=AymYhmayWz4" id="link1"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saymedia-content.com%2F.image%2Ft_share%2FMTc0MzgyNDcyNzYxODQ1Mzgy%2Fstar-wars-4-different-types-of-lightsabers.jpg&f=1&nofb=1" alt="image machine broke"></a>
+	<a href="www.google.com" id="link2">www.google.com</a>
 	<p> sometimes you need a break between 2 paragraphs</p>
 	<hr>
 	<p> Like this! That's where the hr element comes in</p>
 	</div>
 </section>
 <section>
+<div class="class1" id="id1">
 <p> Let's move on to images. The picture tag can allow you to dynamically display images based on different device needs</p>
+</div>
+<div id="grid">
 <picture>
 	<source srcset="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg">
 	<img src="https://media.istockphoto.com/photos/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-picture-id1093110112?k=6&m=1093110112&s=612x612&w=0&h=uBH7Rj-Ew_ixjunRrD_U7alq2ZUPJ_5XgMpe9xO52QQ=" alt="nature picture 2">
@@ -66,7 +78,8 @@
 <canvas width="300" height="300">
   Here is the canvas.
 </canvas>
-<svg width="400" height="180">
+</div>
+<svg style="width:400;height:180">
   <rect x="5" y="20" width="150" height="150" style="fill:blue;stroke:pink;stroke-width:5;opacity:0.5" />
 </svg>
 </section>
@@ -152,6 +165,7 @@ made you look
           rows="2" cols="50">
 I can't remember the last time I remembered my name...
 </textarea>
+<div id="flexbox">
 <p> Are you ready for 10 different inputs? I sure am</p>
 <input type="button" value="button button button">
 <input type="checkbox">
@@ -163,7 +177,13 @@ I can't remember the last time I remembered my name...
 <input type="image" alt="no image has been supplied. unfortunate!">
 <input type="month">
 <input type="number">
+</div>
 </form>
+<div class="box_model">
+	<p>Here is some text</p>
+	<span id="span_box"><a href="www.google.com">Link</a></span>
+	<span><a href="www.google.com">The same link</a></span>
+</div>
 <footer>
 <h1>I won't lie, if there's something i wish html had, it would be compile-time errors</h1>
 </footer>
