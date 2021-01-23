@@ -102,3 +102,12 @@ div + figure {
       display: none;
     }
   }
+
+  p {
+      font-family: Custom, Times;
+  }
+
+  @font-face {
+    font-family: "Custom";
+    src: url(PottaOne-Regular.ttf) format("truetype");
+  }
